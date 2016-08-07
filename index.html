@@ -16,7 +16,7 @@
 					<ul>
 						<li id="sticky"><a href="#home">Brookside Guitars</a></li>
 					</ul>	
-					<ul id="navUL">
+					<ul>
 						<li><a onclick="showInfo('aboutBG', 'home', 'media/store2.jpg');">about</a></li>
 						<li><a href="#lessons">lessons</a></li>
 						<li><a href="#music">music</a></li>
@@ -32,18 +32,45 @@
 			</div>
 		</div>
 		<div class="bgimage" id="fed">
+			<div class="navwrap">	
+				<nav>
+					<ul>
+						<li id="sticky"><a href="#fed">Fed Reggiardo</a></li>
+					</ul>	
+					<ul>
+						<li><a onclick="showInfo('aboutFED', 'fed', 'media/fed.jpg');">about fed</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div class="modal" id="aboutFED">
 				Brookside Guitars' owner and head instructor Fed Reggiardo's passion is playing and teaching music. A resident of the beautiful Brookside neighborhood, Fed sought to create a place where the community could come together to study, create, and perform music.
 				Fed began playing the guitar at the age of seven and performaing at the age of 12. He holds Bachelor's and Master's degrees in Guitar Performance, has co-owned a recording studio (Pluggs), a record label (Swap Records) and performed extensively with his former band Tongue Dried SunFed has been teaching guitar for over 15 years and is a state certified music teacher for K-12. He has developed a teaching methodology designed to nurture and encourage his students to collaborate, perform, and create. He has studied with many of the best guitarists in the world and has created a specialized teaching curriculum designed to deveop the full potential of guitarists from 5 to 85 years of age.   Although fluent in all music styles, Fed's specialties are classical, flamenco, and acoustic fingerstyle guitar.
 			</div>
 		</div>
 		<div class="bgimage" id="ryan">
+			<div class="navwrap">	
+				<nav>
+					<ul>
+						<li id="sticky"><a href="#ryan">Ryan Wurtz</a></li>
+					</ul>	
+					<ul>
+						<li><a onclick="showInfo('aboutRYAN', 'ryan', 'media/ryan.jpg');">about ryan</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div class="modal"  id="aboutRYAN">
 				In 2003 Ryan Wurtz earned a degree in Jazz Guitar Performance from the Conservatory at UMKC, studying under Bobby Watson, Rod Fleeman and Douglas Niedt.Specializing in Jazz and improvisation, Ryan is also at home teaching everything from rock to classical, as well as theory, ear training and writing your own music!
 				In addition to teaching, Ryan performs weekly here in town, as well as across the country, with Kansas City's own Grand Maruis
 			</div>
 		</div>
-		<div class="bgimage" id="lessons"></div>
+		<div class="bgimage" id="lessons">
+			<div class="lessons">
+				PRIVATE LESSONS $30
+			</div>
+			<div class='lessons'>
+				SHARED LESSONS $30
+			</div>
+		</div>
 		<div class="bgimage overlay" id="music">
 			<iframe width="70%" height="70%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/468671&amp;color=55acee&amp;theme_color=55acee&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_playcount=false&amp;show_reposts=false"></iframe>
 		</div>
@@ -67,46 +94,5 @@
 		}	
 	}
 
-	function scrollChange(id) {
-		var innerHi = window.innerHeight;
-		var nav = document.getElementById("navUL");
-		var li = document.createElement('li');
-		var a = document.createElement('a');
-		
-		if ((window.scrollY > (window.innerHeight)) && (window.scrollY < (window.innerHeight * 2))) {                                                                   
-			document.getElementById("sticky").innerHTML = 'Fed Reggiardo';
-			nav.innerHTML = '';
-			a.appendChild(document.createTextNode('about fed')).onclick = function() { showInfo('aboutFED', 'fed', 'media/fed.jpg');};
-			li.appendChild(a);
-			nav.appendChild(li);
-			
-			
-		console.log(a.innerHTML);
-		} 
-		
-		else if ((window.scrollY > (window.innerHeight * 2)) && (window.scrollY < (window.innerHeight * 3))) {                        
-			document.getElementById("sticky").innerHTML = 'Ryan Wurtz'; 
-			document.getElementById("navUL").innerHTML = '';
-			document.getElementById("navUL").innerHTML += '<li>' + '<a onclick="showInfo(\'aboutRYAN\', \'ryan\', \'media/ryan.jpg\');">about ryan</a>' + '</li>';
-		} 
-		
-		else if ((window.scrollY > (window.innerHeight * 3)) && (window.scrollY < (window.innerHeight * 4))) {
-			document.getElementById("sticky").innerHTML = 'Lessons';
-		}
-		
-		else if ((window.scrollY > (window.innerHeight * 4)) && (window.scrollY < (window.innerHeight * 5))) {
-			document.getElementById("sticky").innerHTML = 'Music';
-		}
-		
-		else if (window.scrollY < (window.innerHeight)) {
-			document.getElementById("sticky").innerHTML = 'Brookside Guitars';  
-			document.getElementById("navUL").innerHTML += '<li><a onclick="showInfo(\'aboutBG', 'home', 'media/store2.jpg\');">about</a></li><li><a href="#lessons">lessons</a></li><li><a href="#music">music</a></li><li><a href="#contact">contact</a></li>';
-		}
-	}
-
-	window.addEventListener('scroll',function(){
-        scrollChange('sticky');                                                                                        
-    });
-	
 	</script>
 </html>
