@@ -8,13 +8,13 @@ body, .bgimage {
    	-webkit-justify-content: center;
    	justify-content: center;
 	box-sizing: border-box;
-	background-color: #333;
+	background-color: #fff;
 }
 
 * {
 	text-decoration: none;
 	list-style-type: none;
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: inherit;
 }
 
@@ -24,7 +24,7 @@ body, .bgimage {
 }
 
 #sticky {
-	font-size: 2em;
+	font-size: 1.75em;
 	border-bottom: .5px solid #fff;
 }
 
@@ -37,8 +37,8 @@ body, .bgimage {
 	position: absolute;
 	top: 0;
 	margin: 0;
-	
 }
+
 nav ul {
 	display: flex;
 	flex-direction: row;
@@ -51,15 +51,18 @@ nav ul {
 nav li {
 	text-align: center;
 	padding: 5px 10px;
+	font-size: .9em;
+	
 }
 
 .modal {
 	box-sizing: border-box;
 	color: #fff;
 	padding: 25px;
-	max-width: 90%;
-	font-size: 1.25em;
+	max-width: 95%;
+	font-size: .9em;
 	margin-top: 25px;
+	text-align: center;
 }
 
 #home {
@@ -68,12 +71,20 @@ nav li {
 	max-width: 2400px;
 	position: relative;
 	text-align: center;
-
 }
 
 #aboutBG{
 	visibility: hidden;
+}
 
+#storeInfo {
+	visibility: hidden;
+	background: rgba(50,50,50,.5);
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px;
+	margin-top: 200px;	
 }
 
 #fed {
@@ -82,12 +93,11 @@ nav li {
 	max-width: 2400px;
 	background-position: center center;
 	position: relative;
-
 }
 
 #aboutFED{
 	visibility: hidden;
-
+	overflow: auto;
 }
 
 #ryan {
@@ -96,7 +106,6 @@ nav li {
 	max-width: 2400px;
 	background-position: center center;
 	position: relative;
-
 }
 
 #ryannav{
@@ -105,7 +114,6 @@ nav li {
 
 #aboutRYAN{
 	visibility: hidden;
-
 }
 
 #lessons {
@@ -114,13 +122,33 @@ nav li {
 	max-width:2400px;
 	background-position: center center;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.lessons {
+	font-size: 1.5em;
+	color: #fff;
+	padding: 15px;
+	margin-top: 25px;
+	background: rgba(50,50,50,.5);
+	width: 300px;
+	text-align: center;
+}
+
+.lessons li { 
+	font-size: .9em;
+}
+
+#aboutLESSONS{
+	visibility: hidden;
+	overflow: auto;
 }
 
 #music {
-	background: linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9)), url("media/headphone.jpg") 50% 25%;
+	background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url("media/headphone.jpg") 50% 25%;
 	background-size: 15%;
 	max-width: 2400px;
 }
-
 
 #contact {}
