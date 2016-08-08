@@ -151,4 +151,28 @@ nav li {
 	max-width: 2400px;
 }
 
-#contact {}
+@media (min-width: 700px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	nav ul {
+		margin: 15px 50px 0 0;
+	}
+	
+	.modal {
+		font-size: 1.1em;
+	}
+	
+	#sticky {
+		padding: 0;
+		margin: -5px 0 5px;
+	}
+	
+	.lessons {
+		padding-bottom: 45px;
+		
+	}
+}
