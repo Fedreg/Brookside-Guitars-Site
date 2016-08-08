@@ -75,6 +75,7 @@ nav li {
 
 #aboutBG{
 	visibility: hidden;
+	margin-top: 0;
 }
 
 #storeInfo {
@@ -168,7 +169,7 @@ nav li {
 	
 	#sticky {
 		padding: 0;
-		margin: -5px 0 5px;
+		margin: -5px 0 5px 50px;
 	}
 	
 	.lessons {
