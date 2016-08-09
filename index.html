@@ -5,9 +5,10 @@
 			Brookside Guitars | KCMO
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A neighborhood guitar studio.  Guitar lessons, Ukulele Lessons, Bass Lessons">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
 		<link rel="stylesheet" href="styles.css">
-		<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="bgimage" id="home">
@@ -16,38 +17,80 @@
 					<ul>
 						<li id="sticky"><a href="#home">Brookside Guitars</a></li>
 					</ul>	
-					<ul id="navUL">
+					<ul>
 						<li><a onclick="showInfo('aboutBG', 'home', 'media/store2.jpg');">about</a></li>
 						<li><a href="#lessons">lessons</a></li>
 						<li><a href="#music">music</a></li>
-						<li><a href="#contact">contact</a></li>
+						<li><a onclick="showInfo('storeInfo', 'home', 'media/store2.jpg');">contact</a></li>
 					</ul>
 				</nav>
 			</div>
+			<div id ="storeInfo">
+				816-200-2062<br>
+				6217 Oak Street Kansas City, MO 64113<br>
+				<a href="mailto:info@brooksideguitars.com">email us</a>
+			</div>
 			<div class="modal"  id="aboutBG">
-				Brookside Guitars is a neighborhood guitar shop located in the beautiful Brookside neighborhood of Kansas City, MO dedicated to passing on knowledge and love of music to others and to being a gathering point where local musicians can come together. BG's mission is to educate, inspire, and instill a lifelong enjoyment of creating music in students of all ages. Brookside Guitars also carries a specialized selection of acousitic, classical, and flamenco guitars as well as strings and accessories available for sale.
+				Brookside Guitars is a neighborhood guitar studio located in the beautiful Brookside neighborhood of Kansas City, MO dedicated to passing on knowledge and love of music to others and to being a gathering point where local musicians can come together. BG's mission is to educate, inspire, and instill a lifelong enjoyment of creating music in students of all ages. 
 				<p>
 					<a href="#fed">OUR TEACHERS &darr;</a>
 				</p>
 			</div>
 		</div>
 		<div class="bgimage" id="fed">
+			<div class="navwrap">	
+				<nav>
+					<ul>
+						<li id="sticky"><a href="#fed">Fed Reggiardo</a></li>
+					</ul>	
+					<ul>
+						<li><a onclick="showInfo('aboutFED', 'fed', 'media/fed.jpg');">about fed</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div class="modal" id="aboutFED">
 				Brookside Guitars' owner and head instructor Fed Reggiardo's passion is playing and teaching music. A resident of the beautiful Brookside neighborhood, Fed sought to create a place where the community could come together to study, create, and perform music.
-				Fed began playing the guitar at the age of seven and performaing at the age of 12. He holds Bachelor's and Master's degrees in Guitar Performance, has co-owned a recording studio (Pluggs), a record label (Swap Records) and performed extensively with his former band Tongue Dried SunFed has been teaching guitar for over 15 years and is a state certified music teacher for K-12. He has developed a teaching methodology designed to nurture and encourage his students to collaborate, perform, and create. He has studied with many of the best guitarists in the world and has created a specialized teaching curriculum designed to deveop the full potential of guitarists from 5 to 85 years of age.   Although fluent in all music styles, Fed's specialties are classical, flamenco, and acoustic fingerstyle guitar.
+				Fed began playing the guitar at the age of seven and performaing at the age of 12. He holds Bachelor's and Master's degrees in Guitar Performance, has been teaching guitar for over 20 years and is a state certified music teacher for K-12. He has developed a teaching methodology designed to nurture and encourage his students to collaborate, perform, and create. He has studied with many of the best guitarists in the world and has created a specialized teaching curriculum designed to deveop the full potential of guitarists from 5 to 85 years of age.   Although fluent in all music styles, Fed's specialties are classical, flamenco, and acoustic fingerstyle guitar.
 			</div>
 		</div>
 		<div class="bgimage" id="ryan">
+			<div class="navwrap">	
+				<nav>
+					<ul>
+						<li id="sticky"><a href="#ryan">Ryan Wurtz</a></li>
+					</ul>	
+					<ul>
+						<li><a onclick="showInfo('aboutRYAN', 'ryan', 'media/ryan.jpg');">about ryan</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div class="modal"  id="aboutRYAN">
 				In 2003 Ryan Wurtz earned a degree in Jazz Guitar Performance from the Conservatory at UMKC, studying under Bobby Watson, Rod Fleeman and Douglas Niedt.Specializing in Jazz and improvisation, Ryan is also at home teaching everything from rock to classical, as well as theory, ear training and writing your own music!
 				In addition to teaching, Ryan performs weekly here in town, as well as across the country, with Kansas City's own Grand Maruis
 			</div>
 		</div>
-		<div class="bgimage" id="lessons"></div>
+		<div class="bgimage" id="lessons">
+			<div class="lessons">
+				<p>PRIVATE LESSONS $30</p>					
+				<p>SHARED LESSONS $15</p>
+			</div>
+			<div class="modal" id="aboutLESSONS">
+				<p>Private Lessons: 30 Minute Lesson.  One Student, One Teacher.  Each Lesson Is Tailored To Individual Student.  Attend Weekly, Biweekly, Or At Your Conivenience. 30 minutes</p>
+				<p>Shared Lessons: A 30 Minute Lesson.  Two Students, One Teacher.  Each Lesson Is Tailored To Meet The Needs Of Both Students  Attend Weekly Or Biweekly.  $15 each student.</p>
+				<h3>Why Study at Brookside Guitars?</h3>				
+				<h3>Strategy:</h3>
+				<p>Our Expert Staff Has Over 75 Years Combined Experience Teaching Music.  Let Us Leverage Our Knowledge Of The Latest Techniques And Methodologies To Make The Discovery And Practice Of Your Instrument As Efficient And Enjoyable As Possible.</p>
+				<h3>Focus:</h3>  
+				<p>Many Of Us Have A Specific Goal In Mind When We Start PlayingA Music.  Whether Your Goal Is To Play A Specific Song,, Join A Band, Or Simply Get Mental Exercise, It Is Very Easy To Get Sidetracked And Not Work Efficiently Towards That Goal.  Think Of Your Music Teacher As Your Coach.  We Will Keep You Focused, In Shape, And Working Hard (unless You Hate Hard Work; See Below)</p>
+				<h3>Community</h3>  
+				<p>Playing A Musical Instrument Can Be A Lonely Pursuit With Hours Of Solitary Practice Each Week.  Coming To A Lesson Gives You A Chance To Interact Musically With Another Human Being.  We Also Offer Jam Sessions Every Month Where You Can Meet And Play With Other Students.</p>
+				<h3>Fun!!</h3>
+				<p>We Specialize Our Lesson Style To Each Student So That We Can Make Learning To Play Truly Enjoyable!  Don't Want To Play Basic Songs Like Twinkle Twinkle And Mary Had A Little Lamb?!  ...no Problem! Love Playing Scales For 4 Hours A Day?! ...we Know A Million Scales!  We'll Have You Playing What You Want While Still Making Sure You're Working Towards Your Goals.</p>
+			</div>
+		</div>
 		<div class="bgimage overlay" id="music">
 			<iframe width="70%" height="70%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/468671&amp;color=55acee&amp;theme_color=55acee&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_playcount=false&amp;show_reposts=false"></iframe>
 		</div>
-		<div c100vhs="bgimage" id="contact"></div>
 	</body>
 	<script>
 	
@@ -66,47 +109,7 @@
 			bg.style.backgroundSize = 'cover';
 		}	
 	}
-
-	function scrollChange(id) {
-		var innerHi = window.innerHeight;
-		var nav = document.getElementById("navUL");
-		var li = document.createElement('li');
-		var a = document.createElement('a');
-		
-		if ((window.scrollY > (window.innerHeight)) && (window.scrollY < (window.innerHeight * 2))) {                                                                   
-			document.getElementById("sticky").innerHTML = 'Fed Reggiardo';
-			nav.innerHTML = '';
-			a.appendChild(document.createTextNode('about fed')).onclick = function() { showInfo('aboutFED', 'fed', 'media/fed.jpg');};
-			li.appendChild(a);
-			nav.appendChild(li);
-			
-			
-		console.log(a.innerHTML);
-		} 
-		
-		else if ((window.scrollY > (window.innerHeight * 2)) && (window.scrollY < (window.innerHeight * 3))) {                        
-			document.getElementById("sticky").innerHTML = 'Ryan Wurtz'; 
-			document.getElementById("navUL").innerHTML = '';
-			document.getElementById("navUL").innerHTML += '<li>' + '<a onclick="showInfo(\'aboutRYAN\', \'ryan\', \'media/ryan.jpg\');">about ryan</a>' + '</li>';
-		} 
-		
-		else if ((window.scrollY > (window.innerHeight * 3)) && (window.scrollY < (window.innerHeight * 4))) {
-			document.getElementById("sticky").innerHTML = 'Lessons';
-		}
-		
-		else if ((window.scrollY > (window.innerHeight * 4)) && (window.scrollY < (window.innerHeight * 5))) {
-			document.getElementById("sticky").innerHTML = 'Music';
-		}
-		
-		else if (window.scrollY < (window.innerHeight)) {
-			document.getElementById("sticky").innerHTML = 'Brookside Guitars';  
-			document.getElementById("navUL").innerHTML += '<li><a onclick="showInfo(\'aboutBG', 'home', 'media/store2.jpg\');">about</a></li><li><a href="#lessons">lessons</a></li><li><a href="#music">music</a></li><li><a href="#contact">contact</a></li>';
-		}
-	}
-
-	window.addEventListener('scroll',function(){
-        scrollChange('sticky');                                                                                        
-    });
 	
+
 	</script>
 </html>
